@@ -1,0 +1,11 @@
+impl Character {
+    fn new(name: &str, class: CharacterClass) -> Self {
+        Character {
+            name: name.to_string(),
+            level: 1,
+            character_class: class,
+            health: 100,
+            mana: 50,
+            experience: 0,
+            inventory: Vec::new(),
+        }
